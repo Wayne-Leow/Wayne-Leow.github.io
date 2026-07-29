@@ -1,0 +1,118 @@
+/*////////////////////////// Navbar (DESKTOP) //////////////////////////*/
+#navbar{position:sticky; top:10px;width:60%;margin:auto; margin-top:10px; padding:8px;border-radius:40px;
+		background:rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+		box-shadow:0px 8px 25px rgba(0,0,0,0.2);overflow:hidden;}
+#navbar ul{display:flex;justify-content:center; gap:20px;list-style:none;}
+#navbar ul.menuShow{display:flex;}
+#navbar button{position:relative;z-index:2;padding:12px 20px;border:none;border-radius:25px;background:rgba(255,255,255,0.2);
+		color:black;font-size:16px;cursor:pointer;transition:0.3s;white-space:nowrap;display:flex;align-items:center;gap:10px;}
+.sprite{background-image:url("images/sprites.png");width:25px;height:25px;display:inline-block;vertical-align:middle;}
+.orgin{background-position:0px 0px;}
+.methods{background-position:-25px 0px;}
+.benefit{background-position:-50px 0px;}
+
+/*////////////////////////// General //////////////////////////*/
+.hide{display:none;}
+.page{background:white;text-align:center;width:80vw;height:80vh;border:4px solid #2E7D32;}
+nav ul li{display:inline;}
+#navbar #hamIcon{display:none;}
+
+/* Main background */
+#BadmintonBackground{position:fixed;top:0;left:0;width:100vw;height:100vh;background-image:url("images/background.png");
+background-size:cover;background-position:center;background-repeat:no-repeat;animation:backgroundMove 15s ease-in-out infinite;
+pointer-events:none;z-index:-999;}
+body{margin:0;min-height:100vh;background-color:#4CAF50;}
+/* Floating effect */
+@keyframes backgroundMove{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0px);}}
+main{display:flex;justify-content:center; align-items:center; padding:20px;}
+.page{width:80vw; min-height:70vh; border-radius:20px; margin-top:50px;}
+/*////////////////////////// Page1 (DESKTOP) //////////////////////////*/
+#page1{height:1250px;}
+#orgin_top{width:100%;}
+.orgin_text{background-color: rgba(255,255,255,0.8);border:1px solid #CCCCCC;box-shadow:0 4px 10px rgba(0,0,0,0.1);
+	border-radius:15px;float:left;height:150px;width:48%;margin:5%;margin-top:20px;}
+.orgin_pic{float:left;width:40%;}
+.orgin_bottom{float:left;width:100%;}
+.credits{clear:left;clear:both;width:100%;text-align:center;padding:20px;background:none;}
+
+/*////////////////////////// Page2 (DESKTOP) //////////////////////////*/
+
+#page2{height:2600px;}
+.MethodsPt1{background-color: rgba(255,255,255,0.8);border:1px solid #CCCCCC;box-shadow:0 4px 10px rgba(0,0,0,0.1);
+border-radius:15px;float:left;height:150px;width:45%;margin:5%;margin-top:20px;}
+.MethodsPt1Img{float:right;width:40%;}
+.MethodsPt2Img{float:left;width:40%;}
+.MethodsPt2{background-color: rgba(255,255,255,0.8);border:1px solid #CCCCCC;box-shadow:0 4px 10px rgba(0,0,0,0.1);
+	border-radius:15px;float:right;height:150px;width:45%;margin:5%;margin-top:20px;}
+#MethodsPt3{background-color: rgba(255,255,255,0.8);border:1px solid #CCCCCC;box-shadow:0 4px 10px rgba(0,0,0,0.1);
+	border-radius: 15px;float:right;height:150px;width:45%;margin:5%;margin-top:20px;}
+.MethodsPt3Img_FIRST{float:left;width:50%;}
+.MethodsPt3Img_SECOND{float:left;width:50%}
+.MethodsTitle, #offensive{clear:both;width:100%;}
+#game_title{width:100%;clear:left;}
+#game_top{width:100%;clear:left;}
+#game{width:90%;max-width:600px;height:500px;margin:50px auto; border:2px solid black;position:relative;overflow:hidden;}
+#shuttle{clear:left;width:50px;height:50px;position:absolute;top:0;left:0;}
+#racket{clear:left;width:180px;height:50px;position:absolute;bottom:10px;left:0;}
+#startBtn{display:block;margin:20px auto;}
+#leftBtn, #rightBtn{display:none;}
+
+/*////////////////////////// Page3 (Desktop) //////////////////////////*/
+#page3{height:1250px;}
+#MethodsPt3{width:90%;margin:5%;}
+.benefits{background-color: rgba(255,255,255,0.8);border:1px solid #CCCCCC;box-shadow:0 4px 10px rgba(0,0,0,0.1);
+	border-radius: 15px;float:left;height:150px;width:45%;margin:5%;margin-top:20px;}
+.benefitsIMG{float:left;width:40%;}
+.benefitsTitle{clear:left;width:100%;}
+
+/*////////////////////////// Footer (Desktop) //////////////////////////*/
+footer{clear:left;clear:both;width:100%;text-align:center;padding:20px;background:darkgreen;}
+#footer_left{float:left;width:33%;}
+#footer_right{float:left;width:33%;color:white;}
+#qrCodeImg{width:100px;margin-top:20px;height:100px;	}
+#debug{display:none;}
+
+/*////////////////////////// Responsive //////////////////////////*/
+@media (max-width:800px){
+/*////////////////////////// Navbar (MOBILE) //////////////////////////*/
+#navbar{width:90%;}
+#navbar ul{display:none;flex-direction:column;gap:10px;align-items:center;}
+#navbar ul.menuShow{display:flex;}
+nav ul li{display:block;}
+#navbar #hamIcon{display:block;}
+
+/*////////////////////////// PAGE 1 (MOBILE) //////////////////////////*/
+#page1{height:2000px;}
+#orgin_top{width:100%;}
+.orgin_text{background-color: rgba(255,255,255,0.8);border:1px solid #CCCCCC;box-shadow:0 4px 10px rgba(0,0,0,0.1);
+	border-radius:15px;float:left;height:150px;width:90%;margin:5%;margin-top:20px;}
+.orgin_pic{float:left;width:100%;}
+.orgin_bottom{float:left;width:90%;margin:5%;}
+
+/*////////////////////////// PAGE 2 (MOBILE) //////////////////////////*/
+#page2{height:3000px;}
+.MethodsPt1, .MethodsPt2, .MethodsPt3{background-color: rgba(255,255,255,0.8);border:1px solid #CCCCCC;box-shadow:0 4px 10px rgba(0,0,0,0.1);
+	border-radius:15px;float:left;height:150px;width:90%;margin:5%;margin-top:20px;}
+.MethodsPt1Img, .MethodsPt2Img{float:right;width:100%;}
+.MethodsPt3Img_FIRST{float:left;width:50%;}
+.MethodsPt3Img_SECOND{float:left;width:50%}
+.MethodsTitle, #offensive{clear:both;width:100%;}
+
+#game_title{width:100%;clear:left;}
+#game{height:350px;}
+#shuttle{width:40px;height:40px;}
+#racket{width:140px;}
+#leftBtn, #rightBtn{display:inline-block;width:90px;height:40px;}
+
+/*////////////////////////// PAGE 3 (MOBILE) //////////////////////////*/
+#page3{height:1800px;}
+.benefits{background-color: rgba(255,255,255,0.8);border:1px solid #CCCCCC;box-shadow:0 4px 10px rgba(0,0,0,0.1);
+	border-radius: 15px;float:left;height:150px;width:90%;margin:5%;margin-top:20px;}
+.benefitsIMG{width:100%;}
+.benefitsTitle{width:100%;}
+
+/*////////////////////////// Footer (MOBILE) //////////////////////////*/
+#qrCodeImg{display:none;}}

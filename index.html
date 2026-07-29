@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<script src="main.js" defer></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<!-- get icons from https://www.favicon.cc -->
+		<link rel="manifest" href="manifest.json" />
+		<title>Badminton</title>
+	</head>
+	<body>
+		<div id="BadmintonBackground"></div>
+		<nav id="navbar">
+			<button id="hamIcon">Badminton</button>
+			<ul>
+				<li><button id="page1btn"><span class="sprite orgin"></span>Origin Of Badminton</button></li>
+				<li><button id="page2btn"><span class="sprite methods"></span>Methods Of Defending/Attacking</button></li>
+				<li><button id="page3btn"><span class="sprite benefit"></span>Benefits Of Badminton</button></li>
+			</ul>
+		</nav>
+		<main id="GridContainer">
+			<section class="page" id="page1">
+			<h1 class="hide">Page1</h1>
+				<h2>Origins</h2>
+				<h3 id="orgin_top">Over 2000 Years ago, Many cultures had already follow their own design of badiminton.</h3>
+				<article>
+					<section class="orgin_text">
+					<h3 class="hide">China = Jianzi</h3>
+						<p>
+							In China, It was called Jianzi, using your feet and body to keep the shuttle afloat.
+						</p>
+						<p>
+							The game has also gained a following around the globe. In English, both the sport and
+							the object with which it is played are referred to as a "shuttlecock" or "featherball".
+						</p>
+					</section>
+					<div class="orgin_pic">
+						<img src="images/jianzi.png" alt="Image Of Shuttle in JianZi.">
+						<footer class="credits">
+							<h4>A Jianzi</h4>
+							<div>------Image credits to realprosperityinc.com------</div>
+						</footer>
+					</div>
+				</article>
+				
+				<article>
+					<section class="orgin_text">
+					<h3 class="hide">Japan = Hanetsuki</h3>
+						<p>
+							In Japan, they called it Hanetsuki. With the use of a wooden paddle and a feather shuttle to do the same.
+						</p>
+						<p>
+							It was believed that the longer the shuttle remains in the air, the greater the protection from mosquitoes.
+							Though no longer popular, the paddle, called a hagoita, are still commonly sold throughout japan.
+						</p>
+					</section>
+					<div class="orgin_pic">
+						<img src="images/Hanetsuki.png" alt="Image Of People playing Hanetuski.">
+						<footer class="credits">
+							<h4>A painting of Hanetsuki</h4>
+							<div>------Image credits to thejapaneseshop.co.uk------</div>
+						</footer>
+					</div>
+				</article>
+				
+				
+				<article>
+					<section class="orgin_text">
+					<h3 class="hide">India = Poona</h3>
+						<p>
+							In India, mid-19th century, created by British army officers stationed in Pune.Using a battledore, a shuttle 
+							and a net to create Poona.
+						</p>
+						<p>
+							Poona introduced formal rules, scoring, and a net, making it more competitive. British officers later brought 
+							the game to England, where it was renamed badminton after the Duke of Beaufort's estate, Badminton House.
+						</p>
+					</section>
+					<div class="orgin_pic">
+						<img src="images/poona.png" alt="Image Of people playing Poona">
+						<footer class="credits">
+							<h4>A old picture taken of Poona</h4>
+							<div>------Image credits to whatshot.in------</div>
+						</footer>
+					</div>
+				</article>
+				<section class="orgin_bottom"> 
+				<h3 class="hide">Modern Badminton</h3> 
+				<p> 
+				It was then brought back to England, and finally 
+				developed as Badminton which we all love today. Spreading from a club in England to the whole world! 
+				</p> 
+				</section>
+				<!--MCQ Quiz-->
+				<h3 class="orgin_bottom">MCQ Quiz (Test your Knowledge!)</h3>
+				<form id="quizForm">
+				<fieldset>
+					<legend>1. In China, what do they use to keep the shuttle afloat? </legend>
+						<label><input type="radio" name="q1" value="Feet"> Their Feet </label>
+						<label><input type="radio" name="q1" value="Hagoita"> A Hagoita </label>
+						<label><input type="radio" name="q1" value="Hats"> Their hats </label>
+						<label><input type="radio" name="q1" value="Racket"> Badminton Racket </label>
+				</fieldset>
+				<fieldset>
+					<legend>2. In Japan, what did they believe will happen when the shuttle stays afloat longer?</legend>
+						<label><input type="radio" name="q2" value="Prosperity"> Offer prosperity for their homes </label>
+						<label><input type="radio" name="q2" value="Education"> Better their future education </label>
+						<label><input type="radio" name="q2" value="Mosquitoes"> Protection of mosquitoes </label>
+						<label><input type="radio" name="q2" value="Spirits"> Keep evil spirits away </label>
+				</fieldset>
+				<fieldset>
+					<legend>3.Which country did create the badminton of today?</legend>
+						<label><input type="radio" name="q3" value="Japan"> Japan </label>
+						<label><input type="radio" name="q3" value="China"> China </label>
+						<label><input type="radio" name="q3" value="England"> England </label>
+						<label><input type="radio" name="q3" value="India"> India </label>
+				</fieldset>
+					<button type="button" id="btnSubmit">Submit Quiz</button>
+					<h3 id="scorebox">Not submitted</h3>
+				</form>	
+			</section>
+			<section class="page" id="page2">
+				<h2>Methods</h2>
+				
+				<h3 class="MethodsTitle">========== Defensive Techniques ==========</h3>
+				<section>
+				<h3 class="hide">Defensive Techniques</h3>
+					<article class="MethodsPt1">
+						<h3> LOBBING </h3>
+						A simple technique called "Lobbing" sends a shuttle high and far into the court. A defensive technqiue to trick 
+						opponent into tiring themselves out or play it with low hits to get an advantage.
+					</article>
+					<div class="MethodsPt1Img">
+						<img src="images/lobbing.png" alt="A picture of Lobbing">
+					</div>
+				
+					<article class="MethodsPt2">
+						<h3> PUSHING </h3>
+						Pushing, as its name implies, a defensive technique is to "push" the shuttle straight across the net with a powerful 
+						blow.
+					</article>
+					<div class="MethodsPt2Img">
+						<img src="images/pushing.png" alt="A picture of pushing">
+					</div>
+				</section>	
+				<h3 class="MethodsTitle">========== Both Defensive and Offensive Techniques ==========</h3>
+				<section>
+				<h3 class="hide">Both</h3>
+					<article class="MethodsPt1">
+						<h3> NETTING </h3>
+						Another technique called "Netting". Its name refers to hitting the shuttle close to the net, giving a strategic
+						advantage to pair with other techniques.
+						</article>
+						<div class="MethodsPt1Img">
+							<img src="images/netting.png" alt="A picture of netting">
+						</div>
+					<article class="MethodsPt2">
+						<h3> DROPPING </h3>					
+						Dropping is used as a "low-powered" spike. Making the shuttle go to the front of the court with slight trickery 
+						involved. Similar to Netting but more unpredictable. Can be used offensively and defensively.
+					</article>
+						<div class="MethodsPt2Img">
+							<img src="images/dropping.png" alt="A picture of dropping">
+						</div>
+				</section>
+				<h3 class="MethodsTitle">========== Offensive Techniques ==========</h3>
+				<article id="MethodsPt3">
+					<h3> SPIKING </h3>
+					Spiking, an offensive method of getting the shuttle fast to the other side with lots of power. Great for clearing
+					but hard to pull it off well.
+				</article>
+				<div class="MethodsPt3Img_FIRST">
+					<img src="images/spiking1.png" alt="A picture of spiking">
+				</div>
+				<div class="MethodsPt3Img_SECOND">
+					<img src="images/spiking2.png" alt="A picture of spiking also">
+				</div>
+				<div>
+				<h2 id="game_title">Mini-Game: Singles against Timmy </h2>
+				(Use 'a' and 'd') or ("Go Left" and "Go Right" for mobile)
+				</div>
+				<div id="game_top">
+					<img src="images/Timmy.png" alt="timmy" id="timmy">
+					<h3>Win Against Timmy! (40 Points)</h3>			
+					<h2>Your Score: <span id="gamescore">0</span></h2>
+				</div>
+				<div id="game">	<!--Game-->		
+					Speed: <input type="range" id="SpeedRange" min="1" max="15" value="15"><span id="speed">15</span><br>
+					<button id="startBtn">Start Game</button>
+					<img src="images/shuttle.png" alt="shuttle" id="shuttle">
+					<img src="images/racket.png" alt="racket" id="racket">				
+				</div>
+				<section>
+				<h2 class="hide">Mobile Buttons</h2>
+				<button id="leftBtn">Go Left</button>
+				<button id="rightBtn">Go Right</button>
+				</section>
+			</section>
+				<section class="page" id="page3">
+				<h2>Benefits</h2>
+				<h3 class="benefitsTitle">========== Mental Benefits ==========</h3>
+				<article class="benefits"> 
+				<h3 class="hide">Mental Benefits</h3>
+					<p>
+					In badminton, you always need to analyse, strategise, react, anticipate and make quick decisions, improving Cognitive Function.
+					</p>
+					<p>
+					Additionally, badminton encourages multitasking by simultaneously monitoring opponent's movements, 
+					court positioning, and shot selection while planning their next move.
+					</p>
+				</article>
+				<div class="benefitsIMG">
+					<img src="images/benefits1.png" alt="First benefit">
+				</div>
+				<h3 class="benefitsTitle">========== Physical Benefits ==========</h3>
+				<article class="benefits">
+				<h3 class="hide">Heart rate</h3>
+					<p>
+					Recreational badminton raises heart rates to 80-85% of the players’ predicted maximum heart rate, helping to burn more calories.
+					</p>
+					<p>
+					Furthermore, regular participation can enhance circulatory efficiency by promoting consistent aerobic activity throughout gameplay.
+					</p>
+				</article>
+				<div class="benefitsIMG">
+					<img src="images/benefits2.png" alt="Second benefit">
+				</div>
+				<article class="benefits">
+				<h3 class="hide">Cardiovascular Fitness</h3>
+					<p>
+					It improves cardiovascular fitness. The constant lunging, explosive movements, and changes in direction in badminton definitely
+					gets the heart pumping.
+					</p>
+					<p>
+					Over time, regular participation can improve endurance, stamina, and cardiovascular health.
+					</p>
+				</article>
+				<div class="benefitsIMG">
+					<img src="images/benefits3.png" alt="Third benefit">
+				</div>
+				<article class="benefits">
+				<h3 class="hide">Bone Strength</h3>
+					<p>
+					Since badminton engages the whole body, the impact of the explosive movements and changes in direction helps to strengthen the 
+					bones, especially in the legs, which increases your bone density. 
+					</p>
+					<p>
+					In addition, regular participation can contribute to improved balance, stability, and a reduced risk of bone-related conditions.
+					</p>
+				</article>
+				<div class="benefitsIMG">
+					<img src="images/benefits4.png" alt="Fourth benefit">
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div id="footer_left">
+				<button id="resetBtn">Reset Application</button>
+				<button id="btnFS">Enter FullScreen</button>
+				<button id="btnWS">Exit Full Screen</button>
+			</div>
+				<h4 id="footer_right">Made By Wayne</h4>
+				<img id="qrCodeImg" src="images/qrcodeimg.png" alt="qrcode">
+			<div id="debug">
+				<p>Width: <span id="width"></span></p>
+				<p>Height: <span id="height"></span></p>
+			</div>
+		</footer>
+	</body>
+</html>	
