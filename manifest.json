@@ -1,12 +1,12 @@
-{ "name": "WebDev Demo14 PWA",
-"short_name": "14PWA",
+{ "name": "Badminton Discover",
+"short_name": "Badminton",
 "start_url": "index.html",
 "display": "standalone",
 "background_color": "#ffffff",
 "theme_color": "#00FF00",
 "icons": [
-{ "src": "icons8-durian-64.png",
-"sizes": "64x64",
+{ "src": "icon.png",
+"sizes": "100x100",
 "type": "image/png"
 }
 ]
